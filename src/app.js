@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/accounts', accountsRoutes);
+app.use('/account', accountRoutes);
 app.use('/services', servicesRoutes);
 
 app.get('/', (req, res) => {
